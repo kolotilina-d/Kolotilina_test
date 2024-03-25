@@ -1,0 +1,94 @@
+.table {
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 1 1 1 1 1 1 1;
+}
+
+.table__title {
+  height: 40px;
+  background-color: rgba(244, 247, 252, 0.75);
+}
+.title__list {
+  display: grid;
+  grid-template-columns:
+    35px 160px 238px 70px 100px 100px
+    100px;
+  height: 40px;
+  gap: 0 10px;
+  list-style: none;
+}
+.title__item {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.title__sort {
+  background-color: rgba(244, 247, 252, 0.75);
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: fit-content;
+}
+
+.title__item_sort::after {
+  content: "";
+  padding: 8px;
+  background-image: url(../../../public/column-sorting.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.table__pagination {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 3%;
+}
+
+.info__select {
+  border: none;
+}
+
+.info__select:hover { border-color: #888; } 
+ .info__select:focus { border-color: #aaa; 
+ box-shadow: 0 0 1px 3px rgba(246, 246, 247, 0.7);
+ box-shadow: 0 0 0 3px -moz-mac-focusring; 
+ border: none;
+color: #222;
+ outline: none; 
+} 
+
+
+
+
+
+/* dflbdfnb;ndf */
+.tableItem__list {
+  display: grid;
+  grid-template-columns:
+    35px 160px 238px 70px 100px 100px
+    100px;
+  height: 64px;
+  gap: 0 10px;
+  padding: 0 50px;
+}
+
+.tableItem__list:nth-child(even) {
+  background-color: #F9FAFC;
+}
+
+.tableItem {
+  list-style: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.tableList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
