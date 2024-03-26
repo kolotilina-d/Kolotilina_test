@@ -85,8 +85,6 @@ const MainTable = () => {
             {sliceRows.map((data: any) => {
               return (
                 <>
-                  {/* <TableItem key={item.id} data={item} /> */}
-                  {/* TODO: разобраться как прокинуть пропсом массив в компонент, ошибка с типами */}
                   <li className="tableItem__list" key={data.id}>
                     <div className="tableItem">{data.id}</div>
                     <div className="tableItem">{data.name}</div>
